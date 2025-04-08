@@ -3,48 +3,6 @@ import 'package:flutter/material.dart';
 
 List<Map<String, dynamic>> transactionData = const [
   {
-    "name": "Food",
-    "date": "Apr 7, 2025",
-    "amount": "- \$45.00",
-    "icon": CupertinoIcons.bolt,
-    "color": Color.fromARGB(166, 244, 163, 97),
-  },
-  {
-    "name": "Transport",
-    "date": "Apr 7, 2025",
-    "amount": "- \$15.00",
-    "icon": CupertinoIcons.car,
-    "color": Color.fromARGB(166, 244, 163, 97),
-  },
-  {
-    "name": "Food",
-    "date": "Apr 7, 2025",
-    "amount": "- \$45.00",
-    "icon": CupertinoIcons.bolt,
-    "color": Color.fromARGB(166, 244, 163, 97),
-  },
-  {
-    "name": "Transport",
-    "date": "Apr 7, 2025",
-    "amount": "- \$15.00",
-    "icon": CupertinoIcons.car,
-    "color": Color.fromARGB(166, 244, 163, 97),
-  },
-  {
-    "name": "Food",
-    "date": "Apr 7, 2025",
-    "amount": "- \$45.00",
-    "icon": CupertinoIcons.bolt,
-    "color": Color.fromARGB(166, 244, 163, 97),
-  },
-  {
-    "name": "Transport",
-    "date": "Apr 7, 2025",
-    "amount": "- \$15.00",
-    "icon": CupertinoIcons.car,
-    "color": Color.fromARGB(166, 244, 163, 97),
-  },
-  {
     'name': 'Grocery',
     'date': 'Apr 5, 2025',
     'amount': '- \$30.00',
@@ -57,6 +15,13 @@ List<Map<String, dynamic>> transactionData = const [
     'amount': '- \$15.00',
     'icon': CupertinoIcons.bus,
     'color': Colors.blue,
+  },
+  {
+    'name': 'Salary',
+    'date': 'Apr 1, 2025',
+    'amount': '+ \$1500.00',
+    'icon': CupertinoIcons.money_dollar,
+    'color': Colors.green,
   },
   {
     'name': 'Salary',
