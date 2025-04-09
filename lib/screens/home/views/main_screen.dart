@@ -1,62 +1,10 @@
-import 'dart:math';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:expense_tracker_app1/data/data.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
-  final List<Map<String, dynamic>> transactionData = const [
-    {
-      'name': 'Grocery',
-      'date': 'Apr 5, 2025',
-      'amount': '- \$30.00',
-      'icon': CupertinoIcons.cart,
-      'color': Colors.orange,
-    },
-    {
-      'name': 'Transport',
-      'date': 'Apr 6, 2025',
-      'amount': '- \$15.00',
-      'icon': CupertinoIcons.bus,
-      'color': Colors.blue,
-    },
-    {
-      'name': 'Salary',
-      'date': 'Apr 1, 2025',
-      'amount': '+ \$1500.00',
-      'icon': CupertinoIcons.money_dollar,
-      'color': Colors.green,
-    },
-    {
-      'name': 'Salary',
-      'date': 'Apr 1, 2025',
-      'amount': '+ \$1500.00',
-      'icon': CupertinoIcons.money_dollar,
-      'color': Colors.green,
-    },
-    {
-      'name': 'Rent',
-      'date': 'Apr 2, 2025',
-      'amount': '- \$800.00',
-      'icon': CupertinoIcons.home,
-      'color': Colors.red,
-    },
-    {
-      'name': 'Utilities',
-      'date': 'Apr 3, 2025',
-      'amount': '- \$100.00',
-      'icon': CupertinoIcons.lightbulb,
-      'color': Colors.yellow,
-    },
-    {
-      'name': 'Entertainment',
-      'date': 'Apr 4, 2025',
-      'amount': '- \$50.00',
-      'icon': CupertinoIcons.tv,
-      'color': Colors.purple,
-    },
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -98,7 +46,7 @@ class MainScreen extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "Natati",
+                            "HIBA",
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
@@ -123,22 +71,9 @@ class MainScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 height: 180,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      Theme.of(context).colorScheme.primary,
-                      Theme.of(context).colorScheme.secondary,
-                      Theme.of(context).colorScheme.tertiary,
-                    ],
-                    transform: const GradientRotation(pi / 4),
-                  ),
+                  color: Colors.blue,
                   borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 4,
-                      color: Colors.grey.shade300,
-                      offset: Offset(5, 5),
-                    ),
-                  ],
+                 
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -153,7 +88,7 @@ class MainScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     Text(
-                      ' \$ 2220.00',
+                      ' 2220.00',
                       style: TextStyle(
                         fontSize: 35,
                         color: Colors.white,
@@ -199,7 +134,7 @@ class MainScreen extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    "\$ 200.00",
+                                    " 200.00",
                                     style: TextStyle(
                                       fontSize: 16,
                                       color: Colors.white,
@@ -245,7 +180,7 @@ class MainScreen extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    "\$ 800.00",
+                                    " 800.00",
                                     style: TextStyle(
                                       fontSize: 18,
                                       color: Colors.white,

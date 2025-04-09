@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:expense_tracker_app1/screens/home/views/main_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -40,15 +38,6 @@ class HomeScreen extends StatelessWidget {
           height: 50,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            
-            gradient: LinearGradient(
-              colors: [
-                Theme.of(context).colorScheme.primary,
-                Theme.of(context).colorScheme.secondary,
-                Theme.of(context).colorScheme.tertiary,
-              ],
-              transform: const GradientRotation(pi / 4),
-            ),
           ),
           child: const Icon(CupertinoIcons.add),
         ),
