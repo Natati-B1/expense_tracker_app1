@@ -1,8 +1,9 @@
 import 'dart:math';
 
+import 'package:expense_tracker_app1/data/data.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../data/data.dart';
+
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
