@@ -5,12 +5,11 @@ import 'package:expense_tracker_app1/data/data.dart';
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12.0),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -73,7 +72,6 @@ class MainScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(20),
-                 
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -209,7 +207,7 @@ class MainScreen extends StatelessWidget {
                     "Transactions",
                     style: TextStyle(
                       fontSize: 16,
-                      color: Theme.of(context).colorScheme.onBackground,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
