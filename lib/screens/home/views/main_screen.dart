@@ -45,7 +45,7 @@ class MainScreen extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "HIBA",
+                            "Sami",
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
