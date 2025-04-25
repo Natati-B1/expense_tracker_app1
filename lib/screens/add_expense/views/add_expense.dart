@@ -1,9 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
- class AddExpense extends StatelessWidget {
+import 'package:intl/intl.dart'; 
+ class AddExpense extends StatefulWidget {
   const AddExpense({super.key});
+
   @override
-  Widget build(BuildContext){
+  State<AddExpense> createState() => _AddExpenseState();
+}
+
+class _AddExpenseState extends State<AddExpense> {
+  TextEditingController expesneController =TextEditingController() ;
+  TextEditingController categoryController =TextEditingController() ;
+  TextEditingController dateController =TextEditingController() ;
+  DateTime selectDate = DateTime.now();
+  @override
+  void initState() {
+    dateController.text = DateFormat('dd/MM/yyyy').format(DateTime.now());
+    super.initState();
+  }
+  @override
+  Widget build(BuildContext context){
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus() ,
       child: Scaffold(
@@ -27,6 +43,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.7,
               child: TextFormField(
+                controller: expesneController,
                 textAlignVertical: TextAlignVertical.center ,
                 decoration: InputDecoration(
                   filled: true,
@@ -45,6 +62,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
             ),
             const SizedBox(height: 32,),
             TextFormField(
+                controller: categoryController,
                 textAlignVertical: TextAlignVertical.center ,
                 decoration: InputDecoration(
                   filled: true,
@@ -63,14 +81,22 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
               ),
               const SizedBox(height: 16,),
             TextFormField(
+                controller: dateController,
                 textAlignVertical: TextAlignVertical.center,
                 readOnly: true,
-                onTap: () {
-                  showDatePicker(context: context, 
-                  initialDate: DateTime.now(),
-                  firstDate: DateTime.now(), 
-                  lastDate: DateTime.now().add(const Duration(days:365))
+                onTap: () async {
+                  DateTime? newDate = await showDatePicker(
+                    context: context, 
+                    initialDate: selectDate,
+                    firstDate: DateTime.now(), 
+                    lastDate: DateTime.now().add(const Duration(days:365))
                   );
+                  if(newDate != null){
+                    setState(() {
+                      dateController.text = DateFormat('dd/MM/yyyy').format(DateTime.now());
+                      selectDate = newDate ;
+                    });
+                  }
                 },
                 decoration: InputDecoration(
                   filled: true,
@@ -87,12 +113,26 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
                   ),
                 ),
               ),
-            const SizedBox(height: 16,),
-            TextButton(
-              onPressed: (){},
-              child: Text(
-                'Save'
-              )//Text
+            const SizedBox(height: 32,),
+            SizedBox(
+              width: double.infinity,
+              height: kToolbarHeight,
+              child: TextButton(
+                onPressed: (){},
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.black
+                  shape : RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12)
+                  )
+                ),
+                child: Text(
+                  'Save'
+                  style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.white
+                  ),
+                )//Text
+              ),
             )// TextButton
           ],
          ),
@@ -100,4 +140,4 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
       ),
     ); //Scaffold
   }
- }
+}
