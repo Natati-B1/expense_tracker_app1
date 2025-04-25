@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
  class AddExpense extends StatelessWidget {
   const AddExpense({super.key});
   @override
@@ -15,14 +16,33 @@ import 'package:flutter/material.dart';
           child: Column(
           crossAxisAlignment: crossAxisAlignment.center,
           children: [
-            Text(
-              "Add Expenses",\
+           const Text(
+              "Add Expenses",
               style : TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.w500
               ),
             ),
-            TextFormField(),
+            const SizedBox(height:16),
+            SizedBox(
+              width: MediaQuery.of(context).size.width * 0.7,
+              child: TextFormField(
+                textAlignVertical: TextAlignVertical.center ,
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: Colors.white,
+                  prefixIcon: const Icon(
+                    FontAwesomeIcons.dollarSign, 
+                    size: 16,
+                    color: Colors.grey,
+                    ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide.none
+                  ),
+                ),
+              ),
+            ),
             const SizedBox(height: 16,),
             TextFormField(),
             const SizedBox(height: 16,),
