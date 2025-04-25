@@ -43,10 +43,50 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
                 ),
               ),
             ),
-            const SizedBox(height: 16,),
-            TextFormField(),
-            const SizedBox(height: 16,),
-            TextFormField(),
+            const SizedBox(height: 32,),
+            TextFormField(
+                textAlignVertical: TextAlignVertical.center ,
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: Colors.white,
+                  prefixIcon: const Icon(
+                    FontAwesomeIcons.list, 
+                    size: 16,
+                    color: Colors.grey,
+                  ),
+                  hintText: 'Category',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide.none
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16,),
+            TextFormField(
+                textAlignVertical: TextAlignVertical.center,
+                readOnly: true,
+                onTap: () {
+                  showDatePicker(context: context, 
+                  initialDate: DateTime.now(),
+                  firstDate: DateTime.now(), 
+                  lastDate: DateTime.now().add(const Duration(days:365))
+                  );
+                },
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: Colors.white,
+                  prefixIcon: const Icon(
+                    FontAwesomeIcons.clock, 
+                    size: 16,
+                    color: Colors.grey,
+                  ),
+                  hintText: 'Date',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide.none
+                  ),
+                ),
+              ),
             const SizedBox(height: 16,),
             TextButton(
               onPressed: (){},
