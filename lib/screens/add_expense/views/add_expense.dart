@@ -17,17 +17,17 @@ import 'package:flutter/material.dart';
           children: [
             Text(
               "Add Expenses",\
-              style: TextStyle(
+              style : TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.w500
               ),
             ),
             TextFormField(),
-            SizeBox(height: 16,),
+            const SizedBox(height: 16,),
             TextFormField(),
-            SizeBox(height: 16,),
+            const SizedBox(height: 16,),
             TextFormField(),
-            SizeBox(height: 16,),
+            const SizedBox(height: 16,),
             TextButton(
               onPressed: (){},
               child: Text(
