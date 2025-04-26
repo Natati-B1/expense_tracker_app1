@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
             MaterialPageRoute<void>(
               builder:(BuildContext context) => const AddExpense(),
             ),
-          ),
+          );
         },
         shape: CircleBorder(),
         child: Container(

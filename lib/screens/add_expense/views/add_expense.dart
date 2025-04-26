@@ -33,14 +33,14 @@ class _AddExpenseState extends State<AddExpense> {
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus() ,
       child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background
-        appBar: AppBar{
+        backgroundColor: Theme.of(context).colorScheme.background,
+        appBar : AppBar(
           backgroundColor: Theme.of(context).colorScheme.background,
-        },//AppBar
+        ),//AppBar
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-          crossAxisAlignment: crossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
            const Text(
               "Add Expenses",
@@ -99,7 +99,7 @@ class _AddExpenseState extends State<AddExpense> {
                                     'Create a Category'
                                   ),
                               content: Column(
-                                mainAxisAlignment: MainAxisSize.min,
+                                mainAxisSize: MainAxisSize.min,
                                 children: [
                                     TextFormField(
                                     //controller: dateController,
@@ -252,13 +252,13 @@ class _AddExpenseState extends State<AddExpense> {
               child: TextButton(
                 onPressed: (){},
                 style: TextButton.styleFrom(
-                  backgroundColor: Colors.black
+                  backgroundColor: Colors.black,
                   shape : RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12)
                   )
                 ),
                 child: Text(
-                  'Save'
+                  'Save',
                   style: TextStyle(
                     fontSize: 22,
                     color: Colors.white
