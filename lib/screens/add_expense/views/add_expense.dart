@@ -64,6 +64,10 @@ class _AddExpenseState extends State<AddExpense> {
             TextFormField(
                 controller: categoryController,
                 textAlignVertical: TextAlignVertical.center ,
+                readOnly: true,
+                onTap: (){
+
+                } ,
                 decoration: InputDecoration(
                   filled: true,
                   fillColor: Colors.white,
@@ -71,6 +75,77 @@ class _AddExpenseState extends State<AddExpense> {
                     FontAwesomeIcons.list, 
                     size: 16,
                     color: Colors.grey,
+                  ),
+                  suffixIcon: IconButton(
+                    onPressed: () {
+                      showDialog(
+                        context: context, 
+                        builder: (ctx){
+                          return AlertDialog(
+                            title: const Text(
+                                  'Create a Category'
+                                ),
+                            content: Column(
+                              mainAxisAlignment: MainAxisSize.min,
+                              children: [
+                                  TextFormField(
+                                  //controller: dateController,
+                                  textAlignVertical: TextAlignVertical.center,
+                                  //readOnly: true,
+                                  decoration: InputDecoration(
+                                    filled: true,
+                                    fillColor: Colors.white,                                    
+                                    
+                                    hintText: 'Name',
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                      borderSide: BorderSide.none
+                                    ),
+                                   ),
+                                  ),
+                                  const SizedBox(height: 16,),
+                                  TextFormField(
+                                  //controller: dateController,
+                                  textAlignVertical: TextAlignVertical.center,
+                                  //readOnly: true,
+                                  decoration: InputDecoration(
+                                    filled: true,
+                                    fillColor: Colors.white,                                    
+                                    
+                                    hintText: 'Icon',
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                      borderSide: BorderSide.none
+                                    ),
+                                   ),
+                                  ),
+                                  const SizedBox(height: 16,),
+                                  TextFormField(
+                                  //controller: dateController,
+                                  textAlignVertical: TextAlignVertical.center,
+                                  //readOnly: true,
+                                  decoration: InputDecoration(
+                                    filled: true,
+                                    fillColor: Colors.white,                                    
+                                    
+                                    hintText: 'Color',
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                      borderSide: BorderSide.none
+                                    ),
+                                   ),
+                                  ),
+                            ],
+                            )
+                          );
+                        }
+                        );
+                    },
+                    icon: const Icon(
+                      FontAwesomeIcons.plus, 
+                      size: 16,
+                      color: Colors.grey,
+                  )
                   ),
                   hintText: 'Category',
                   border: OutlineInputBorder(
