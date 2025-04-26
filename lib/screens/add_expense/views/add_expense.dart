@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart'; 
@@ -13,6 +14,15 @@ class _AddExpenseState extends State<AddExpense> {
   TextEditingController categoryController =TextEditingController() ;
   TextEditingController dateController =TextEditingController() ;
   DateTime selectDate = DateTime.now();
+  List<String> myCategoriesIcons =[
+    'entertainment',
+    'food',
+    'home',
+    'pet',
+    'shopping',
+    'tech',
+    'travel'
+  ];
   @override
   void initState() {
     dateController.text = DateFormat('dd/MM/yyyy').format(DateTime.now());
@@ -81,62 +91,109 @@ class _AddExpenseState extends State<AddExpense> {
                       showDialog(
                         context: context, 
                         builder: (ctx){
-                          return AlertDialog(
-                            title: const Text(
-                                  'Create a Category'
-                                ),
-                            content: Column(
-                              mainAxisAlignment: MainAxisSize.min,
-                              children: [
-                                  TextFormField(
-                                  //controller: dateController,
-                                  textAlignVertical: TextAlignVertical.center,
-                                  //readOnly: true,
-                                  decoration: InputDecoration(
-                                    filled: true,
-                                    fillColor: Colors.white,                                    
-                                    
-                                    hintText: 'Name',
-                                    border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                      borderSide: BorderSide.none
-                                    ),
-                                   ),
+                          bool isExpended = false;
+                          return StatefulBuilder(
+                            builder: (context, setState) {
+                            return AlertDialog(
+                              title: const Text(
+                                    'Create a Category'
                                   ),
-                                  const SizedBox(height: 16,),
-                                  TextFormField(
-                                  //controller: dateController,
-                                  textAlignVertical: TextAlignVertical.center,
-                                  //readOnly: true,
-                                  decoration: InputDecoration(
-                                    filled: true,
-                                    fillColor: Colors.white,                                    
-                                    
-                                    hintText: 'Icon',
-                                    border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                      borderSide: BorderSide.none
+                              content: Column(
+                                mainAxisAlignment: MainAxisSize.min,
+                                children: [
+                                    TextFormField(
+                                    //controller: dateController,
+                                    textAlignVertical: TextAlignVertical.center,
+                                    //readOnly: true,
+                                    decoration: InputDecoration(
+                                      isDense: true,
+                                      filled: true,
+                                      fillColor: Colors.white,                                    
+                                      
+                                      hintText: 'Name',
+                                      border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(12),
+                                        borderSide: BorderSide.none
+                                      ),
+                                     ),
                                     ),
-                                   ),
-                                  ),
-                                  const SizedBox(height: 16,),
-                                  TextFormField(
-                                  //controller: dateController,
-                                  textAlignVertical: TextAlignVertical.center,
-                                  //readOnly: true,
-                                  decoration: InputDecoration(
-                                    filled: true,
-                                    fillColor: Colors.white,                                    
-                                    
-                                    hintText: 'Color',
-                                    border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                      borderSide: BorderSide.none
+                                    const SizedBox(height: 16,),
+                                    TextFormField(
+                                    //controller: dateController,
+                                    onTap: () {
+                                      setState(() {
+                                        isExpended = !isExpended;
+                                      });
+                                    },
+                                    textAlignVertical: TextAlignVertical.center,
+                                    readOnly: true,
+                                    decoration: InputDecoration(
+                                      isDense: true,
+                                      filled: true,
+                                      suffix: Icon(CupertinoIcons.chevron_down, size: 12,),
+                                      fillColor: Colors.white,                                    
+                                      
+                                      hintText: 'Icon',
+                                      border: OutlineInputBorder(
+                                        borderRadius: isExpended
+                                        ?
+                                        const BorderRadius.vertical(
+                                        top: Radius.circular(12)
+                                         )
+                                         : BorderRadius.circular(12),
+                                        borderSide: BorderSide.none
+                                      ),
+                                     ),
                                     ),
-                                   ),
-                                  ),
-                            ],
-                            )
+                                    isExpended
+                                    ? Container(
+                                        width: MediaQuery.of(context).size.width,
+                                        height: 200,
+                                        decoration: const BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.vertical(
+                                            bottom: Radius.circular(12)
+                                          )
+                                        ),
+                                        child: ListView.builder(
+                                          itemCount: myCategoriesIcons.length,
+                                          itemBuilder: (context,int i){
+                                            return Container(
+                                              width: 50,
+                                              height: 50,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: AssetImage(
+                                                    'assets/${myCategoriesIcons[i]}.png'
+                                                  )
+                                                  )
+                                              ),
+                                            );
+                                          }
+                                          ), 
+                                      )
+                                      :Container(),
+                                    const SizedBox(height: 16,),
+                                    TextFormField(
+                                    //controller: dateController,
+                                    textAlignVertical: TextAlignVertical.center,
+                                    //readOnly: true,
+                                    decoration: InputDecoration(
+                                      isDense: true,
+                                      filled: true,
+                                      fillColor: Colors.white,                                    
+                                      
+                                      hintText: 'Color',
+                                      border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(12),
+                                        borderSide: BorderSide.none
+                                      ),
+                                     ),
+                                    ),
+                              ],
+                              )
+                            );
+                            }
                           );
                         }
                         );
