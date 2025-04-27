@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:intl/intl.dart'; 
+import 'package:intl/intl.dart';
+import 'package:flutter_colorpicker/flutter_colorpicker.dart';
+ 
  class AddExpense extends StatefulWidget {
   const AddExpense({super.key});
 
@@ -171,10 +173,10 @@ class _AddExpenseState extends State<AddExpense> {
                                               itemBuilder: (context,int i){
                                                 return GestureDetector(
                                                   onTap: () {
-                                                    setState {(){
+                                                    setState ((){
                                                       iconSelected=myCategoriesIcons[i];
 
-                                                    }};
+                                                    });
                                                   },
                                                   child: Container(
                                                     width: 50,
@@ -211,12 +213,12 @@ class _AddExpenseState extends State<AddExpense> {
                                               content: Column(
                                                 mainAxisSize: MainAxisSize.min,
                                                 children: [
-                                                  ColorPickler(
-                                                    pickercolor:categoryColor,                                                    
+                                                  ColorPicker(
+                                                    pickerColor:categoryColor,                                                    
                                                     onColorChanged: (value){
-                                                      setState { () {
+                                                      setState ( () {
                                                         categoryColor =value;
-                                                      }};
+                                                      });
                                                     },
                                                   ),//colorpicker
                                                   SizedBox(

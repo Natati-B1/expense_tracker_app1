@@ -31,4 +31,4 @@ class FirebaseExpenseRepo implements ExpenseRepository {
       log(e.toString());
       rethrow;
     }
-  }
+  }}
