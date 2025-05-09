@@ -12,6 +12,13 @@
 
 Visual highlights of the Expense Tracker App:
 
+<div align="center">
+  <img src="assets/dashboard.jpg" width="200"/>
+  <img src="assets/reports.jpg" width="200"/>
+  <img src="assets/add_transaction.jpg" width="200"/>
+  <img src="assets/add.jpg" width="200"/>
+</div>
+
 ### 🧾 Dashboard  
 ![Dashboard](https://github.com/Natati-B1/expense_tracker_app1/blob/main/assets/dashboard.jpg?raw=true)
 
@@ -25,12 +32,7 @@ Visual highlights of the Expense Tracker App:
 ![Add](https://github.com/Natati-B1/expense_tracker_app1/blob/main/assets/add.jpg?raw=true)
 
 
-<div align="center">
-  <img src="assets/dashboard.jpg" width="200"/>
-  <img src="assets/reports.jpg" width="200"/>
-  <img src="assets/add_transaction.jpg" width="200"/>
-  <img src="assets/add.jpg" width="200"/>
-</div>
+
 
 ---
 
