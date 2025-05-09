@@ -26,10 +26,10 @@ Visual highlights of the Expense Tracker App:
 
 
 <div align="center">
-  <img src="screenshots/dashboard.jpg" width="200"/>
-  <img src="screenshots/reports.jpg" width="200"/>
-  <img src="screenshots/add_transaction.jpg" width="200"/>
-  <img src="screenshots/add.jpg" width="200"/>
+  <img src="assets/dashboard.jpg" width="200"/>
+  <img src="assets/reports.jpg" width="200"/>
+  <img src="assets/add_transaction.jpg" width="200"/>
+  <img src="assets/add.jpg" width="200"/>
 </div>
 
 ---
@@ -87,10 +87,6 @@ Visual highlights of the Expense Tracker App:
 
 ---
 
-## 📂 Project Structure
-
-
----
 
 ## 👥 Contributors
 
