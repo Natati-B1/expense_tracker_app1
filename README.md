@@ -8,6 +8,17 @@
 
 ---
 
+## 🧠 Features
+
+- ✅ Add & categorize income/expenses
+- 📊 View real-time pie and bar charts
+- 🔍 Filter transaction history
+- ⚡ Fast, minimal-tap logging
+- 🌐 Firebase Firestore for cloud storage
+- 📴 Offline storage with (optional) SharedPreferences
+- 📅 Date and currency localization
+
+---
 ## 📸 Screenshots
 
 Visual highlights of the Expense Tracker App:
@@ -33,18 +44,6 @@ Visual highlights of the Expense Tracker App:
 
 
 
-
----
-
-## 🧠 Features
-
-- ✅ Add & categorize income/expenses
-- 📊 View real-time pie and bar charts
-- 🔍 Filter transaction history
-- ⚡ Fast, minimal-tap logging
-- 🌐 Firebase Firestore for cloud storage
-- 📴 Offline storage with (optional) SharedPreferences
-- 📅 Date and currency localization
 
 ---
 
@@ -98,11 +97,7 @@ Visual highlights of the Expense Tracker App:
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License.
-
----
 
 ## 🌐 Connect
 
