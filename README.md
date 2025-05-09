@@ -91,14 +91,6 @@ Visual highlights of the Expense Tracker App:
 ---
 
 
-## 👥 Contributors
-
-- [Your Name] - Flutter Developer  
-- [Team Member Name] - UI/UX Designer  
-- [Team Member Name] - Firebase Integration  
-
----
-
 
 
 ## 🌐 Connect
