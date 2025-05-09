@@ -1,0 +1,17 @@
+[33mcommit 17fc4b8835ce4ba05e2803f10f5bbd475f713d99[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature-main-screen-page[m[33m)[m
+Author: Natati Birhanu <Natu1225@gmail.com>
+Date:   Sun Apr 6 10:37:24 2025 +0300
+
+    Updated feature main screen page, added new screens and modified app flow
+
+[33mcommit 1fc6f625c96e726e6f92b78492d43b6cd2309222[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/feature-main-screen-page[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m, [m[1;32mdevelop[m[33m)[m
+Author: Natati Birhanu <Natu1225@gmail.com>
+Date:   Fri Apr 4 18:01:27 2025 +0300
+
+    Initial Flutter project setup
+
+[33mcommit cae8e3b38dcdde61d5fbcc2379e994827a67eab2[m
+Author: Natati Birhanu <natati1225@gmail.com>
+Date:   Fri Apr 4 17:58:39 2025 +0300
+
+    Initial commit
