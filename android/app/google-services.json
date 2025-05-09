@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "381378317710",
+    "project_id": "expense-dbf6f",
+    "storage_bucket": "expense-dbf6f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381378317710:android:6fca4a94b3e57d889428df",
+        "android_client_info": {
+          "package_name": "com.example.expense"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnhgluSBYlK5PPMOpVL5gc17XbPCotrpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381378317710:android:4d41d38013238baf9428df",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnhgluSBYlK5PPMOpVL5gc17XbPCotrpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
