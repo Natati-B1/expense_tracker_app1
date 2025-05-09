@@ -1,3 +1,7 @@
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:expense_tracker_app1/data/data.dart';
 import 'dart:math';
 
 import 'package:expense_tracker_app1/data/data.dart';
@@ -12,7 +16,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12.0),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -48,7 +52,7 @@ class MainScreen extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "Natati",
+                            "HIBA",
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
@@ -73,22 +77,8 @@ class MainScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 height: 180,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      Theme.of(context).colorScheme.primary,
-                      Theme.of(context).colorScheme.secondary,
-                      Theme.of(context).colorScheme.tertiary,
-                    ],
-                    transform: const GradientRotation(pi / 4),
-                  ),
+                  color: Colors.blue,
                   borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 4,
-                      color: Colors.grey.shade300,
-                      offset: Offset(5, 5),
-                    ),
-                  ],
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -103,7 +93,7 @@ class MainScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     Text(
-                      ' \$ 2220.00',
+                      ' 2220.00',
                       style: TextStyle(
                         fontSize: 35,
                         color: Colors.white,
@@ -149,7 +139,7 @@ class MainScreen extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    "\$ 200.00",
+                                    " 200.00",
                                     style: TextStyle(
                                       fontSize: 16,
                                       color: Colors.white,
@@ -195,7 +185,7 @@ class MainScreen extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    "\$ 800.00",
+                                    " 800.00",
                                     style: TextStyle(
                                       fontSize: 18,
                                       color: Colors.white,
@@ -224,7 +214,7 @@ class MainScreen extends StatelessWidget {
                     "Transactions",
                     style: TextStyle(
                       fontSize: 16,
-                      color: Theme.of(context).colorScheme.onBackground,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

@@ -1,25 +1,37 @@
-import 'dart:math';
-
 import 'package:expense_tracker_app1/screens/home/views/main_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:expense_tracker_app1/screens/home/views/stats.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int index = 0;
+  late Color selectedItem = Colors.blue;
+  Color unselectedItem = Colors.grey;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // app bar
-      appBar: AppBar(),
       bottomNavigationBar: ClipRRect(
         borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
         child: BottomNavigationBar(
-          backgroundColor: Colors.white,
+          onTap: (value) {
+            setState(() {
+              index = value;
+            });
+          },
           showSelectedLabels: false,
           showUnselectedLabels: false,
+          backgroundColor: Colors.white,
           elevation: 3,
-          items: const [
+          selectedItemColor: index == 0 ? selectedItem : unselectedItem,
+          unselectedItemColor: index == 1 ? selectedItem : unselectedItem,
+          items: [
             BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.home),
               label: "Home",
@@ -38,22 +50,11 @@ class HomeScreen extends StatelessWidget {
         child: Container(
           width: 50,
           height: 50,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            
-            gradient: LinearGradient(
-              colors: [
-                Theme.of(context).colorScheme.primary,
-                Theme.of(context).colorScheme.secondary,
-                Theme.of(context).colorScheme.tertiary,
-              ],
-              transform: const GradientRotation(pi / 4),
-            ),
-          ),
+          decoration: BoxDecoration(shape: BoxShape.circle),
           child: const Icon(CupertinoIcons.add),
         ),
       ),
-      body: const MainScreen(),
+      body: index == 0 ? MainScreen() : StatsScreen(),
     );
   }
 }
