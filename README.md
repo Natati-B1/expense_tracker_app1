@@ -8,13 +8,28 @@
 
 ---
 
-## 📱 Screenshots
+## 📸 Screenshots
+
+Visual highlights of the Expense Tracker App:
+
+### 🧾 Dashboard  
+![Dashboard](https://github.com/Natati-B1/expense_tracker_app1/blob/main/assets/dashboard.jpg?raw=true)
+
+### 📊 Reports  
+![Reports](https://github.com/Natati-B1/expense_tracker_app1/blob/main/assets/reports.jpg?raw=true)
+
+### ➕ Add Transaction  
+![Add Transaction](https://github.com/Natati-B1/expense_tracker_app1/blob/main/assets/add_transaction.jpg?raw=true)
+
+### ✅ Add Confirmation  
+![Add](https://github.com/Natati-B1/expense_tracker_app1/blob/main/assets/add.jpg?raw=true)
+
 
 <div align="center">
-  <img src="screenshots/dashboard.png" width="200"/>
-  <img src="screenshots/add_transaction.png" width="200"/>
-  <img src="screenshots/history.png" width="200"/>
-  <img src="screenshots/reports.png" width="200"/>
+  <img src="screenshots/dashboard.jpg" width="200"/>
+  <img src="screenshots/reports.jpg" width="200"/>
+  <img src="screenshots/add_transaction.jpg" width="200"/>
+  <img src="screenshots/add.jpg" width="200"/>
 </div>
 
 ---
