@@ -1,6 +1,13 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:expense_tracker_app1/data/data.dart';
+import 'dart:math';
+
+import 'package:expense_tracker_app1/data/data.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
