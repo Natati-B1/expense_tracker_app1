@@ -8,17 +8,6 @@
 
 ---
 
-## 🧠 Features
-
-- ✅ Add & categorize income/expenses
-- 📊 View real-time pie and bar charts
-- 🔍 Filter transaction history
-- ⚡ Fast, minimal-tap logging
-- 🌐 Firebase Firestore for cloud storage
-- 📴 Offline storage with (optional) SharedPreferences
-- 📅 Date and currency localization
-
----
 ## 📸 Screenshots
 
 Visual highlights of the Expense Tracker App:
@@ -41,6 +30,19 @@ Visual highlights of the Expense Tracker App:
 
 ### ✅ Add Confirmation  
 ![Add](https://github.com/Natati-B1/expense_tracker_app1/blob/main/assets/add.jpg?raw=true)
+
+---
+## 🧠 Features
+
+- ✅ Add & categorize income/expenses
+- 📊 View real-time pie and bar charts
+- 🔍 Filter transaction history
+- ⚡ Fast, minimal-tap logging
+- 🌐 Firebase Firestore for cloud storage
+- 📴 Offline storage with (optional) SharedPreferences
+- 📅 Date and currency localization
+
+
 
 
 
