@@ -74,3 +74,30 @@
 
 ## 📂 Project Structure
 
+
+---
+
+## 👥 Contributors
+
+- [Your Name] - Flutter Developer  
+- [Team Member Name] - UI/UX Designer  
+- [Team Member Name] - Firebase Integration  
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🌐 Connect
+
+🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)  
+💌 [Email](mailto:your@email.com)  
+📁 [Portfolio](https://your-portfolio.com)
+
+---
+
+> “Track every coin. Understand every pattern. Take control of your finances.”  
+— *Expense Tracker Team*
