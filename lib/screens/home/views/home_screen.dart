@@ -1,25 +1,30 @@
 import 'dart:math';
 
 import 'package:expense_repository/expense_repository.dart';
-import 'package:expenses_tracker/screens/add_expense/blocs/create_categorybloc/create_category_bloc.dart';
-import 'package:expenses_tracker/screens/add_expense/blocs/get_categories_bloc/get_categories_bloc.dart';
-import 'package:expenses_tracker/screens/add_expense/views/add_expense.dart';
-import 'package:expenses_tracker/screens/home/blocs/get_expenses_bloc/get_expenses_bloc.dart';
-import 'package:expenses_tracker/screens/home/views/main_screen.dart';
+import 'package:flutter_application_1/screens/add_expense/blocs/create_categorybloc/create_category_bloc.dart';
+import 'package:flutter_application_1/screens/add_expense/blocs/get_categories_bloc/get_categories_bloc.dart';
+import 'package:flutter_application_1/screens/add_expense/views/add_expense.dart';
+import 'package:flutter_application_1/screens/home/blocs/get_expenses_bloc/get_expenses_bloc.dart';
+import 'package:flutter_application_1/screens/home/views/main_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../add_expense/blocs/create_expense_bloc/create_expense_bloc.dart';
 import '../../stats/stats.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
+
 class _HomeScreenState extends State<HomeScreen> {
   int index = 0;
   late Color selectedItem = Colors.blue;
   Color unselectedItem = Colors.grey;
+
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<GetExpensesBloc, GetExpensesState>(
@@ -61,7 +66,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 );
-                if(newExpense != null) {
+
+Hafiz, [5/9/2025 11:45 PM]
+if(newExpense != null) {
                   setState(() {
                     state.expenses.insert(0, newExpense);
                   });
