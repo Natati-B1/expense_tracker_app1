@@ -1,8 +1,11 @@
-#YDAdmasu -yididya admasu
-#Sanfordsami - samuel aklilu
-#HafizByteX-abdulhafiz seid
-#Natati-B1 -Natati birhanu
-#HibaAhm-Hiba Ahmedhussen
+| GitHub Username   | Full Name            |
+|-------------------|----------------------|
+| YDAdmasu          | Yididya Admasu       |
+| Sanfordsami       | Samuel Aklilu        |
+| HafizByteX        | Abdulhafiz Seid      |
+| Natati-B1         | Natati Birhanu       |
+| HibaAhm           | Hiba Ahmedhussen     |
+
 
 # 💸 Expense Tracker App: Simplified Finance Management for Everyone
 
