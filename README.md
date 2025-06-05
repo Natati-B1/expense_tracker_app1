@@ -1,3 +1,9 @@
+YDAdmasu -yididya admasu
+Sanfordsami - samuel aklilu
+HafizByteX-abdulhafiz seid
+Natati-B1 -Natati birhanu
+HibaAhm-Hiba Ahmedhussen
+
 # 💸 Expense Tracker App: Simplified Finance Management for Everyone
 
 ![Platform](https://img.shields.io/badge/platform-Flutter-blue.svg)
